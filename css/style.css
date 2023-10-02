@@ -30,7 +30,8 @@ tipo de colores utilizados
 header {
     background-color: #F23545;
     width: 100%;
-    text-align: end;
+    display: flex;
+    justify-content: space-between;
     position: sticky;
     top: 0;
     }
@@ -117,7 +118,7 @@ header {
 }
 
 .carrito {
-    text-align: end;
+    text-align: center;
     background-color: #FCAEAE;
     
 }
@@ -304,11 +305,15 @@ article {
 }
 
 @media (max-width: 768px) {
+        header {
+        padding: 10px 0;  
+        }
         .navbar {
             justify-content: center; 
             flex-direction: row; 
             gap: 1rem; 
-            text-align: center; 
+            text-align: center;
+            font-size: 0.9rem; 
         }
     
         .navbar li {
@@ -325,10 +330,14 @@ article {
 }
 
 @media (max-width: 425px){
+    header {
+        padding: 0.5rem 0;  
+        }
     .navbar {
         text-align: center;
         flex-direction: column;
         gap: 0;
+        font-size: 0.8rem;
     }
     .contactos h2 {
         text-align: center;
@@ -352,6 +361,7 @@ article {
         text-align: center;
         flex-direction: column;
         gap: 0;
+        font-size: 0.7rem;
     }
     .contactos h2 {
         text-align: center;
@@ -367,6 +377,7 @@ article {
         text-align: center;
         flex-direction: column;
         gap: 0;
+        font-size: 0.6rem;
     }
     .contactos h2 {
         text-align: center;
@@ -375,6 +386,18 @@ article {
         width: 100%;
         height: 200px;
     }
+}
+
+.navbar li a:hover {
+    color: blue;
+    text-decoration: overline; 
+}
+.conteiner-productos article div a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.ir-a-comprar button:active{
+    background-color: aqua;
 }
 /* footer */
 footer {
