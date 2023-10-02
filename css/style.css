@@ -35,6 +35,17 @@ header {
     top: 0;
     }
 
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 1.25rem;
+}
+
+.logo img {
+    max-width: 6.25rem;
+    height: auto;
+}
+
 .navbar {
     list-style: none;
     display: flex;
@@ -302,6 +313,9 @@ article {
     
         .navbar li {
             margin: 0.5rem 0; 
+        }
+        .logo {
+            justify-content: center;
         }
 }
 @media (max-width: 525px) {
