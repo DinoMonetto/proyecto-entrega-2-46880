@@ -1,0 +1,30 @@
+/*Fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,500;1,6..12,300&family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+/* Llamo a las variables */
+@import "./utilities/variables";
+
+/* Elemntos de la carpeta base */
+
+@import "./base/reset";
+
+/*elementos de layout*/
+
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/main-nosotros";
+@import "./layout/main-contacto";
+@import "./layout/main-productos";
+@import "./layout/main-carro";
+
+/*elementos de components*/
+
+/*elementos de mediaquery*/
+
+@import "./layout/media/media1024";
+@import "./layout/media/media768";
+@import "./layout/media/media525";
+@import "./layout/media/media425";
+@import "./layout/media/media420";
+@import "./layout/media/media375";
+@import "./layout/media/media320";
