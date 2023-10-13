@@ -5,4 +5,31 @@ header{
     justify-content: space-between;
     position: sticky;
     top: 0;
+    padding: 1.25rem 0.625rem;
+    .nav-wrapper{
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem;
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-right: 1.25rem;
+        }
+        .logo img {
+            max-width: 6.25rem;
+            height: auto;
+        }
+        nav #toggle, nav label{
+            display: none;
+        }
 }
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 1.25rem;
+    .navbar li a {
+        text-decoration: none;
+    }
+    }

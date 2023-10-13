@@ -1,7 +1,5 @@
-/*Fuente*/
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,500;1,6..12,300&family=Roboto:ital,wght@0,400;1,300&display=swap");
 /* Llamo a las variables */
-/* Elemntos de la carpeta base */
+/* Elementos de la carpeta base */
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +13,75 @@ header {
   display: flex;
   justify-content: space-between;
   position: sticky;
-  top: 0; }
+  top: 0;
+  padding: 1.25rem 0.625rem; }
+  header .nav-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem; }
+    header .nav-wrapper .logo {
+      display: flex;
+      align-items: center;
+      margin-right: 1.25rem; }
+    header .nav-wrapper .logo img {
+      max-width: 6.25rem;
+      height: auto; }
+    header .nav-wrapper nav #toggle, header .nav-wrapper nav label {
+      display: none; }
+
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem; }
+  .navbar .navbar li a {
+    text-decoration: none; }
+
+.quienes-somos h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Roboto', sans-serif; }
+
+.quienes-somos p {
+  text-align: justify;
+  text-align: center; }
+
+.quienes-somos img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: .625rem;
+  overflow: hidden; }
+
+.titulo-productos {
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Roboto', sans-serif; }
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr; }
+
+.precios {
+  list-style-position: inside;
+  text-align: end; }
+  .precios ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+
+.agregar {
+  text-align: end; }
+  .agregar ul {
+    list-style-position: inside;
+    text-align: end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+
+.precios ul li, .agregar ul li {
+  margin: 5px; }
 
 /*elementos de components*/
 /*elementos de mediaquery*/

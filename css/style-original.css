@@ -19,6 +19,9 @@ tipo de colores utilizados
 #FCAEAE
 #FF6666
 */
+$color-principal: #f23545;
+$color-secundario: #FCAEAE;
+$background-color: #FFEADD;
 *{
     margin: 0;
     padding: 0;

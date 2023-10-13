@@ -1,0 +1,18 @@
+.quienes-somos {
+    h1 {
+        text-align: center;
+        text-decoration: underline;
+        font-family: 'Roboto', sans-serif;
+    }
+    p{
+        text-align: justify;
+        text-align: center;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%; 
+        border-radius: .625rem;
+        overflow: hidden;
+    }
+}
