@@ -1,0 +1,38 @@
+main {
+    background-color: $background-color;
+}
+
+.el-carrito {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 0px; 
+    text-align: center;
+    h1 {
+        grid-column: 1 / span 3; 
+        text-align: center;
+        text-decoration: underline;
+        font-family: 'Roboto', sans-serif;
+    }
+    h2 {
+        grid-column: 1 / span 3; 
+        text-align: center;
+    }
+    article {
+        background-color: $color-secundario;
+        padding: 10px;
+    }
+}
+
+.elcarrito-ul, .precio-ul, .quitar-ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.ir-a-comprar button {
+    display: block;
+    margin: 20px;
+}
+.ir-a-comprar button:active{
+    background-color: aqua;
+}

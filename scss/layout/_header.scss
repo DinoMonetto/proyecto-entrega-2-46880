@@ -29,7 +29,13 @@ header{
     list-style: none;
     display: flex;
     gap: 1.25rem;
-    .navbar li a {
-        text-decoration: none;
+    li{
+        a{
+            text-decoration: none;
+            &:hover{
+                color: blue;
+                text-decoration: overline; 
+        }
     }
     }
+}

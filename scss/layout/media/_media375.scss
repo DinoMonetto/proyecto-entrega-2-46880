@@ -1,0 +1,15 @@
+@media (max-width: 375px){
+    .navbar {
+        text-align: center;
+        flex-direction: column;
+        gap: 0;
+        font-size: 0.7rem;
+    }
+    .contactos h2 {
+        text-align: center;
+    }
+    .direccion iframe {
+        width: 100%;
+        height: 200px;
+    }
+}

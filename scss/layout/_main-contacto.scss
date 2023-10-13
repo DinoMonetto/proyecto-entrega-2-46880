@@ -1,0 +1,41 @@
+main {
+    background-color: $background-color;
+}
+.contactanos {
+    h1 {
+        margin: .625rem;
+        text-align: center;
+        text-decoration: underline;
+        font-family: 'Roboto', sans-serif;
+        background-color: $color-principal;
+    }
+    h3 {
+        text-align: center;
+        text-decoration: underline;
+        background-color: $color-secundario;
+    }
+    h4 {
+        text-align: center;
+        
+    }
+}
+
+.direccion {
+    iframe {
+        display: block;
+        margin: 0 auto;
+    }
+    h3{
+        text-align: center;
+        background-color: $color-principal;
+    }
+    h4 {
+        text-align: center;
+        background-color: $color-secundario;
+    }
+}
+
+.redes {
+    text-align: center;
+    
+}

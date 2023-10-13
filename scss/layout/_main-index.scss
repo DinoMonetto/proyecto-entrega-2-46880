@@ -1,0 +1,88 @@
+main {
+    background-color: $background-color;
+}
+
+.wsp-carro {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    .wspfixed,
+    .carrofixed {
+        margin: 0 10px;
+} 
+
+.historia {
+    background-color:$background-color;
+    h1 {
+        text-align: center;
+        text-decoration: underline;
+        font-family: 'Roboto', sans-serif;
+    }
+    p {
+        text-align: justify;
+        text-indent: 30px;   
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%; 
+    }
+}
+
+}
+.contactos {
+    margin: .625rem; 
+    h2{
+        text-align: end;
+        background-color: $color-secundario;
+        padding: .625rem;   
+    }
+
+}
+
+.texto-productos {
+    text-align: center;
+    background-color: $color-secundario;
+    margin: .625rem;
+    border-radius: .625rem;
+    overflow: hidden;   
+}
+
+.conteiner-productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .card {
+        margin: 10px;
+        width: 18.75rem;
+        height: 23rem;
+        background-color: $color-principal;
+        border-radius: .625rem;
+        overflow: hidden;
+        box-shadow: 2px 2px .625rem #a1222c;
+        text-align: center;
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
+        h3 {
+            text-align: center;
+        }
+        article{
+            div{
+                a:hover{
+                    color: blue;
+                    text-decoration: underline;
+            }
+            }
+        }
+    }
+}
+.carrito {
+    text-align: center;
+    background-color: $color-secundario;
+}

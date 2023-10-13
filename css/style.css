@@ -33,8 +33,79 @@ header {
   list-style: none;
   display: flex;
   gap: 1.25rem; }
-  .navbar .navbar li a {
+  .navbar li a {
     text-decoration: none; }
+    .navbar li a:hover {
+      color: blue;
+      text-decoration: overline; }
+
+main {
+  background-color: #FFEADD; }
+
+.wsp-carro {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row; }
+  .wsp-carro .wspfixed,
+  .wsp-carro .carrofixed {
+    margin: 0 10px; }
+  .wsp-carro .historia {
+    background-color: #FFEADD; }
+    .wsp-carro .historia h1 {
+      text-align: center;
+      text-decoration: underline;
+      font-family: 'Roboto', sans-serif; }
+    .wsp-carro .historia p {
+      text-align: justify;
+      text-indent: 30px; }
+    .wsp-carro .historia img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%; }
+
+.contactos {
+  margin: .625rem; }
+  .contactos h2 {
+    text-align: end;
+    background-color: #FCAEAE;
+    padding: .625rem; }
+
+.texto-productos {
+  text-align: center;
+  background-color: #FCAEAE;
+  margin: .625rem;
+  border-radius: .625rem;
+  overflow: hidden; }
+
+.conteiner-productos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .conteiner-productos .card {
+    margin: 10px;
+    width: 18.75rem;
+    height: 23rem;
+    background-color: #f23545;
+    border-radius: .625rem;
+    overflow: hidden;
+    box-shadow: 2px 2px .625rem #a1222c;
+    text-align: center; }
+    .conteiner-productos .card img {
+      width: 100%;
+      max-width: 100%; }
+    .conteiner-productos .card h3 {
+      text-align: center; }
+    .conteiner-productos .card article div a:hover {
+      color: blue;
+      text-decoration: underline; }
+
+.carrito {
+  text-align: center;
+  background-color: #FCAEAE; }
 
 .quienes-somos h1 {
   text-align: center;
@@ -51,6 +122,42 @@ header {
   max-width: 100%;
   border-radius: .625rem;
   overflow: hidden; }
+
+main {
+  background-color: #FFEADD; }
+
+.contactanos h1 {
+  margin: .625rem;
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f23545; }
+
+.contactanos h3 {
+  text-align: center;
+  text-decoration: underline;
+  background-color: #FCAEAE; }
+
+.contactanos h4 {
+  text-align: center; }
+
+.direccion iframe {
+  display: block;
+  margin: 0 auto; }
+
+.direccion h3 {
+  text-align: center;
+  background-color: #f23545; }
+
+.direccion h4 {
+  text-align: center;
+  background-color: #FCAEAE; }
+
+.redes {
+  text-align: center; }
+
+main {
+  background-color: #FFEADD; }
 
 .titulo-productos {
   text-align: center;
@@ -83,5 +190,113 @@ header {
 .precios ul li, .agregar ul li {
   margin: 5px; }
 
+main {
+  background-color: #FFEADD; }
+
+.el-carrito {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0px;
+  text-align: center; }
+  .el-carrito h1 {
+    grid-column: 1 / span 3;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif; }
+  .el-carrito h2 {
+    grid-column: 1 / span 3;
+    text-align: center; }
+  .el-carrito article {
+    background-color: #FCAEAE;
+    padding: 10px; }
+
+.elcarrito-ul, .precio-ul, .quitar-ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center; }
+
+.ir-a-comprar button {
+  display: block;
+  margin: 20px; }
+
+.ir-a-comprar button:active {
+  background-color: aqua; }
+
+footer {
+  text-align: center;
+  background-color: #FFEADD; }
+
 /*elementos de components*/
 /*elementos de mediaquery*/
+@media (max-width: 1024px) {
+  .header {
+    background-color: #f23545; } }
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 0; }
+  .navbar {
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    align-items: center;
+    padding: 0.5rem 0px; }
+  nav label {
+    display: flex;
+    cursor: pointer; }
+  .navbar li {
+    margin: 0.5rem 0; }
+  .logo {
+    justify-content: center; }
+  nav #toggle:checked ~ .menu {
+    height: 100%; } }
+
+@media (max-width: 525px) {
+  .el-carrito h3 {
+    font-size: 0.9rem; } }
+
+@media (max-width: 425px) {
+  header {
+    padding: 0.5rem 0; }
+  .navbar {
+    text-align: center;
+    flex-direction: column;
+    gap: 0;
+    font-size: 0.8rem; }
+  .contactos h2 {
+    text-align: center; }
+  .direccion iframe {
+    width: 100%;
+    height: 200px; }
+  .primer-parte {
+    font-size: 14px; } }
+
+@media (max-width: 420px) {
+  .el-carrito h3 {
+    font-size: 0.6rem; } }
+
+@media (max-width: 375px) {
+  .navbar {
+    text-align: center;
+    flex-direction: column;
+    gap: 0;
+    font-size: 0.7rem; }
+  .contactos h2 {
+    text-align: center; }
+  .direccion iframe {
+    width: 100%;
+    height: 200px; } }
+
+@media (max-width: 320px) {
+  .navbar {
+    text-align: center;
+    flex-direction: column;
+    gap: 0;
+    font-size: 0.6rem; }
+  .contactos h2 {
+    text-align: center; }
+  .direccion iframe {
+    width: 100%;
+    height: 200px; } }
