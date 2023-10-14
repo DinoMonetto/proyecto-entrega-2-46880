@@ -8,36 +8,46 @@
 
 /*elementos de layout*/
 header {
-  background-color: #F23545;
+  background-color: #f23545;
   width: 100%;
+  height: 6.25rem;
   display: flex;
   justify-content: space-between;
   position: sticky;
   top: 0;
-  padding: 1.25rem 0.625rem; }
+  padding: 1.25rem 0.625rem;
+  align-items: center; }
   header .nav-wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 1rem; }
-    header .nav-wrapper .logo {
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center; }
+    header .nav-wrapper nav {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
       align-items: center;
-      margin-right: 1.25rem; }
-    header .nav-wrapper .logo img {
-      max-width: 6.25rem;
-      height: auto; }
-    header .nav-wrapper nav #toggle, header .nav-wrapper nav label {
-      display: none; }
+      padding: 1rem 1.5rem; }
+      header .nav-wrapper nav .logo {
+        display: flex;
+        margin-right: 1.25rem;
+        max-width: 6.25rem;
+        height: auto; }
+      header .nav-wrapper nav .menu .navbar {
+        list-style: none;
+        display: flex;
+        gap: 1.25rem;
+        justify-content: center; }
+        header .nav-wrapper nav .menu .navbar li a {
+          text-decoration: none; }
+          header .nav-wrapper nav .menu .navbar li a:hover {
+            color: blue;
+            background-color: red;
+            text-decoration: overline; }
 
-.navbar {
-  list-style: none;
-  display: flex;
-  gap: 1.25rem; }
-  .navbar li a {
-    text-decoration: none; }
-    .navbar li a:hover {
-      color: blue;
-      text-decoration: overline; }
+nav #toggle, nav label {
+  display: none; }
 
 main {
   background-color: #FFEADD; }
@@ -51,19 +61,20 @@ main {
   .wsp-carro .wspfixed,
   .wsp-carro .carrofixed {
     margin: 0 10px; }
-  .wsp-carro .historia {
-    background-color: #FFEADD; }
-    .wsp-carro .historia h1 {
-      text-align: center;
-      text-decoration: underline;
-      font-family: 'Roboto', sans-serif; }
-    .wsp-carro .historia p {
-      text-align: justify;
-      text-indent: 30px; }
-    .wsp-carro .historia img {
-      display: block;
-      margin: 0 auto;
-      max-width: 100%; }
+
+.historia {
+  background-color: #FFEADD; }
+  .historia h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif; }
+  .historia p {
+    text-align: justify;
+    text-indent: 30px; }
+  .historia img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; }
 
 .contactos {
   margin: .625rem; }
@@ -106,6 +117,9 @@ main {
 .carrito {
   text-align: center;
   background-color: #FCAEAE; }
+
+main {
+  background-color: #FFEADD; }
 
 .quienes-somos h1 {
   text-align: center;
@@ -234,24 +248,31 @@ footer {
 
 @media (max-width: 768px) {
   header {
-    padding: 10px 0; }
-  .navbar {
-    justify-content: center;
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-    font-size: 0.9rem;
-    align-items: center;
-    padding: 0.5rem 0px; }
-  nav label {
-    display: flex;
-    cursor: pointer; }
-  .navbar li {
-    margin: 0.5rem 0; }
-  .logo {
-    justify-content: center; }
-  nav #toggle:checked ~ .menu {
-    height: 100%; } }
+    padding: 10px 0;
+    flex-direction: column; }
+    header .nav-wrapper .logo {
+      justify-content: center;
+      margin: 1rem 0; }
+    header .nav-wrapper nav input[type="checkbox"] {
+      display: none; }
+    header .nav-wrapper nav label {
+      display: flex;
+      cursor: pointer; }
+    header .nav-wrapper nav .menu {
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease; }
+    header .nav-wrapper nav ul.navbar {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      align-items: center;
+      padding: 0.5rem 0px; }
+      header .nav-wrapper nav ul.navbar li {
+        margin: 0.5rem 0; }
 
 @media (max-width: 525px) {
   .el-carrito h3 {
@@ -300,3 +321,4 @@ footer {
   .direccion iframe {
     width: 100%;
     height: 200px; } }
+  }

@@ -8,10 +8,12 @@ main {
     bottom: 0;
     display: flex;
     flex-direction: row;
+
     .wspfixed,
     .carrofixed {
         margin: 0 10px;
-} 
+    }
+}
 
 .historia {
     background-color:$background-color;
@@ -28,18 +30,17 @@ main {
         display: block;
         margin: 0 auto;
         max-width: 100%; 
+        }
     }
-}
 
-}
-.contactos {
+.contactos 
+{
     margin: .625rem; 
     h2{
         text-align: end;
         background-color: $color-secundario;
         padding: .625rem;   
     }
-
 }
 
 .texto-productos {
@@ -77,11 +78,12 @@ main {
                 a:hover{
                     color: blue;
                     text-decoration: underline;
-            }
+                    }
+                }
             }
         }
     }
-}
+
 .carrito {
     text-align: center;
     background-color: $color-secundario;
