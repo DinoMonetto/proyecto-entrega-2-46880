@@ -15,6 +15,7 @@ main {
     }
 }
 
+
 .historia {
     background-color:$background-color;
     h1 {
@@ -41,6 +42,7 @@ main {
         background-color: $color-secundario;
         padding: .625rem;
         a {
+            transition: transform 0.3s;
             &:hover {
                 transform: scale(1.1);
             }
@@ -95,4 +97,9 @@ main {
 
 .contactos ul h2 a:hover{
     transform: scale(1.1);
+}
+
+p{
+    text-align: center;
+    font-size: map-get($font-size-textos, md );
 }
