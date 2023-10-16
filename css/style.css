@@ -7,16 +7,20 @@
   font-family: 'Nunito Sans', sans-serif; }
 
 /*elementos de layout*/
+/*elementos de header*/
 header {
   background-color: #f23545;
   width: 100%;
   height: 6.25rem;
-  display: flex;
-  justify-content: space-between;
   position: sticky;
   top: 0;
   padding: 1.25rem 0.625rem;
-  align-items: center; }
+  display: flex;
+  flex-direction: space-between;
+  flex-wrap: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px; }
   header .nav-wrapper {
     width: 100%;
     margin: 0 auto;
@@ -50,6 +54,7 @@ header {
 nav #toggle, nav label {
   display: none; }
 
+/*elementos de index*/
 main {
   background-color: #FFEADD; }
 
@@ -96,7 +101,8 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  gap: none; }
   .conteiner-productos .card {
     margin: 10px;
     width: 18.75rem;
@@ -119,13 +125,15 @@ main {
   text-align: center;
   background-color: #FCAEAE; }
 
+/*elementos de nosotros*/
 main {
   background-color: #FFEADD; }
 
 .quienes-somos h1 {
   text-align: center;
   text-decoration: underline;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px; }
 
 .quienes-somos p {
   text-align: justify;
@@ -138,6 +146,7 @@ main {
   border-radius: .625rem;
   overflow: hidden; }
 
+/*elementos de contactos*/
 main {
   background-color: #FFEADD; }
 
@@ -171,6 +180,7 @@ main {
 .redes {
   text-align: center; }
 
+/*elementos de productos*/
 main {
   background-color: #FFEADD; }
 
@@ -180,10 +190,13 @@ main {
   font-family: 'Roboto', sans-serif; }
 
 .grid {
-  display: grid;
   width: 100%;
+  display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 1fr; }
+  grid-template-rows: 1fr;
+  justify-content: none;
+  align-content: none;
+  gap: none; }
 
 .precios {
   list-style-position: inside;
@@ -205,6 +218,7 @@ main {
 .precios ul li, .agregar ul li {
   margin: 5px; }
 
+/*elementos de carro*/
 main {
   background-color: #FFEADD; }
 
@@ -237,6 +251,7 @@ main {
 .ir-a-comprar button:active {
   background-color: aqua; }
 
+/*elementos de footer*/
 footer {
   text-align: center;
   background-color: #FFEADD; }
@@ -253,8 +268,12 @@ footer {
     max-height: 0;
     overflow: hidden; }
   nav ul {
+    display: flex;
     flex-direction: column;
+    flex-wrap: none;
+    justify-content: none;
     align-items: center;
+    gap: 0.0625rem;
     padding: 0.5rem 0px; }
   nav label {
     display: flex;

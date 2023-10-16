@@ -1,11 +1,12 @@
 main {
-    background-color: $background-color;
+    background-color: map-get($colores-maps, blanco);
 }
 .quienes-somos {
     h1 {
         text-align: center;
         text-decoration: underline;
         font-family: 'Roboto', sans-serif;
+        font-size: map-get($font-size-textos, xl)
     }
     p{
         text-align: justify;

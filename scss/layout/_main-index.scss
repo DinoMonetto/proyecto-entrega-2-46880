@@ -52,11 +52,7 @@ main {
 }
 
 .conteiner-productos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, wrap, center, center, none);
     .card {
         margin: 10px;
         width: 18.75rem;

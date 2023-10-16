@@ -1,18 +1,26 @@
 /* Llamo a las variables */
 @import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./utilities/maps";
 
 /* Elementos de la carpeta base */
 
 @import "./base/reset";
 
 /*elementos de layout*/
-
+/*elementos de header*/
 @import "./layout/header";
+/*elementos de index*/
 @import "./layout/main-index";
+/*elementos de nosotros*/
 @import "./layout/main-nosotros";
+/*elementos de contactos*/
 @import "./layout/main-contacto";
+/*elementos de productos*/
 @import "./layout/main-productos";
+/*elementos de carro*/
 @import "./layout/main-carro";
+/*elementos de footer*/
 @import "./layout/footer";
 
 /*elementos de components*/
