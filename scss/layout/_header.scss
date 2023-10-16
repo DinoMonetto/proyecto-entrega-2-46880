@@ -6,7 +6,7 @@ header {
     top: 0;
     padding: 1.25rem 0.625rem;
     @include flex(space-between, none, space-between, center, 16px);
-
+    z-index: 100;
     .nav-wrapper {
         width: 100%;
         margin: 0 auto;
@@ -36,10 +36,12 @@ header {
                     li {
                         a {
                             text-decoration: none;
+                            transition: transform 0.3s;
                             &:hover {
                                 color: blue;
                                 background-color: red;
                                 text-decoration: overline;
+                                transform: scale(1.1);
                             }
                         }
                     }

@@ -39,9 +39,15 @@ main {
     h2{
         text-align: end;
         background-color: $color-secundario;
-        padding: .625rem;   
+        padding: .625rem;
+        a {
+            &:hover {
+                transform: scale(1.1);
+            }
     }
 }
+}
+
 
 .texto-productos {
     text-align: center;
@@ -53,6 +59,8 @@ main {
 
 .conteiner-productos {
     @include flex(row, wrap, center, center, none);
+    position: relative;
+    z-index: 1;
     .card {
         margin: 10px;
         width: 18.75rem;
@@ -83,4 +91,8 @@ main {
 .carrito {
     text-align: center;
     background-color: $color-secundario;
+}
+
+.contactos ul h2 a:hover{
+    transform: scale(1.1);
 }

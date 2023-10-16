@@ -20,7 +20,8 @@ header {
   flex-wrap: none;
   justify-content: space-between;
   align-items: center;
-  gap: 16px; }
+  gap: 16px;
+  z-index: 100; }
   header .nav-wrapper {
     width: 100%;
     margin: 0 auto;
@@ -45,11 +46,13 @@ header {
         justify-content: center;
         max-height: 0; }
         header .nav-wrapper nav .menu .navbar li a {
-          text-decoration: none; }
+          text-decoration: none;
+          transition: transform 0.3s; }
           header .nav-wrapper nav .menu .navbar li a:hover {
             color: blue;
             background-color: red;
-            text-decoration: overline; }
+            text-decoration: overline;
+            transform: scale(1.1); }
 
 nav #toggle, nav label {
   display: none; }
@@ -88,6 +91,8 @@ main {
     text-align: end;
     background-color: #FCAEAE;
     padding: .625rem; }
+    .contactos h2 a:hover {
+      transform: scale(1.1); }
 
 .texto-productos {
   text-align: center;
@@ -102,7 +107,9 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: none; }
+  gap: none;
+  position: relative;
+  z-index: 1; }
   .conteiner-productos .card {
     margin: 10px;
     width: 18.75rem;
@@ -124,6 +131,9 @@ main {
 .carrito {
   text-align: center;
   background-color: #FCAEAE; }
+
+.contactos ul h2 a:hover {
+  transform: scale(1.1); }
 
 /*elementos de nosotros*/
 main {
@@ -263,7 +273,7 @@ footer {
     background-color: #f23545; } }
 
 @media (max-width: 768px) {
-  nav .menu {
+  .menu {
     width: 100%;
     max-height: 0;
     overflow: hidden; }
